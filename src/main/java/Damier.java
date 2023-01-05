@@ -1,32 +1,26 @@
-import java.util.List;
-
 public class Damier {
-    private int[][] tableau;
+    private Case[][] tableau;
 
     public Damier(){
-        this.tableau = new int[10][10];
+        this.tableau = new Case[10][10];
     }
-    public Damier(int[][] tableau) {
+    public Damier(Case[][] tableau) {
         this.tableau = tableau;
     }
 
-    public int[][] getTableau() {
+    public Case[][] getTableau() {
         return tableau;
     }
 
-    public void setTableau(int[][] tableau) {
+    public void setTableau(Case[][] tableau) {
         this.tableau = tableau;
     }
 
     public void initDamier(){
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                if (i) {
-
-                }
-
+                this.tableau[i][j] = new Case();
             }
-
         }
     }
 }

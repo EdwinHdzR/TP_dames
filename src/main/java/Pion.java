@@ -1,9 +1,11 @@
 public class Pion {
     private int x;
     private int y;
+    private String couleur;
 
     public Pion() {
     }
+
 
     public int getX() {
         return x;
@@ -20,4 +22,15 @@ public class Pion {
     public void setY(int y) {
         this.y = y;
     }
+
+    public String getCouleur() {
+        return couleur;
+    }
+
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
+    }
+
+
+
 }
